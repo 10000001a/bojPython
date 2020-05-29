@@ -8,7 +8,7 @@ userList = []
 answer = ''
 
 for i in range(N):
-    a = input().split(' ')
+    a = In()[:-1].split(' ')
 
     userList.append(tuple([int(a[0]), a[1]]))
 
