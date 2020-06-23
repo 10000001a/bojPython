@@ -13,17 +13,6 @@ for _ in range(N):
         'right': right if not right == '.' else None
     }
 
-# tmp = ['A']
-#
-# while tmp:
-#     visitingNode = tmp.pop(0)
-#
-#     if treeDict[visitingNode]['left']:
-#         tmp.insert(0, treeDict[visitingNode]['left'])
-#     if treeDict[visitingNode]['right']:
-#         tmp.append(treeDict[visitingNode]['right'])
-#
-#     answer[0].append(visitingNode)
 
 def preorder(node):
     answer[0].append(node)
@@ -49,6 +38,7 @@ def postorder(node):
         postorder(treeDict[node]['right'])
 
     answer[2].append(node)
+
 
 preorder('A')
 inorder('A')
